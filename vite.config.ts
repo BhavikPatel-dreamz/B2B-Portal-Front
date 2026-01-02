@@ -5,6 +5,9 @@ import path from 'path';
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react(),tailwindcss()],
+    server: {
+        allowedHosts: ['b2b.dynamicdreamz.com'],
+    },
     define: {
         'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production'),
     },
